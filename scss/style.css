@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: hsl(212, 45%, 89%);
+}
+
+main article {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main article #qr-card {
+  width: 15%;
+  padding: 12px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  box-shadow: hsl(212, 45%, 89%) 0px 4px 12px;
+}
+main article #qr-card img {
+  width: 100%;
+  border-radius: 7px;
+}
+main article #qr-card #qr-text {
+  margin-top: 20px;
+  text-align: center;
+  font-family: "Outfit", sans-serif;
+}
+main article #qr-card #qr-text .qr-info {
+  font-weight: 800;
+  font-size: 14px;
+  background-color: white;
+  color: #374259;
+}
+main article #qr-card #qr-text .just-text {
+  padding: 10px 0 20px 0;
+  background-color: white;
+  color: gray;
+  font-size: 11px;
+}
+
+@media (max-width: 425px) {
+  main article #qr-card {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 425px) and (min-width: 320px) and (max-width: 375px) {
+  main article #qr-card #qr-text .qr-info {
+    font-size: 20px;
+  }
+  main article #qr-card #qr-text .just-text {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 425px) and (min-width: 375px) and (max-width: 425px) {
+  main article #qr-card #qr-text .qr-info {
+    font-size: 23px;
+  }
+  main article #qr-card #qr-text .just-text {
+    font-size: 21px;
+  }
+}/*# sourceMappingURL=style.css.map */
